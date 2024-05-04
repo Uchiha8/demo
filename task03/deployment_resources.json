@@ -36,6 +36,7 @@
     "resource_type": "api_gateway",
     "deploy_stage": "api",
     "dependencies": [],
+    "authorizers": {},
     "resources": {
       "/hello": {
         "enable_cors": false,
