@@ -13,6 +13,7 @@ import java.util.Map;
 	isPublishVersion = false,
 	logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
 )
+
 public class HelloWorld implements RequestHandler<Object, Map<String, Object>> {
 
 	public Map<String, Object> handleRequest(Object request, Context context) {
