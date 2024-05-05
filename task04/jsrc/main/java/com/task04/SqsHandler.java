@@ -15,7 +15,7 @@ import java.util.Map;
 		logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
 )
 @SqsTriggerEventSource(targetQueue="async_queue", batchSize=10)
-@SqsEvents
+//@SqsEvents
 public class SqsHandler implements RequestHandler<Object, Map<String, Object>> {
 
 	public Map<String, Object> handleRequest(Object request, Context context) {
