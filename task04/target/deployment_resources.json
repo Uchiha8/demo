@@ -1,31 +1,4 @@
 {
-  "sns_handler" : {
-    "name" : "sns_handler",
-    "lambda_path" : "C:\\Users\\user\\Documents\\Epam\\demo\\task04",
-    "version" : "1.0.0",
-    "func_name" : "com.task04.SnsHandler",
-    "deployment_package" : "task04-1.0.0.jar",
-    "resource_type" : "lambda",
-    "runtime" : "java11",
-    "architectures" : [ "x86_64" ],
-    "iam_role_name" : "sns_handler-role",
-    "memory" : 1024,
-    "timeout" : 300,
-    "subnet_ids" : [ ],
-    "security_group_ids" : [ ],
-    "dependencies" : [ {
-      "resource_name" : "lambda_topic",
-      "resource_type" : "sns_topic"
-    } ],
-    "event_sources" : [ {
-      "resource_type" : "sns_topic_trigger",
-      "target_topic" : "lambda_topic"
-    } ],
-    "env_variables" : { },
-    "publish_version" : false,
-    "logs_expiration" : "${logs_expiration}",
-    "snap_start" : "None"
-  },
   "sqs_handler" : {
     "name" : "sqs_handler",
     "lambda_path" : "C:\\Users\\user\\Documents\\Epam\\demo\\task04",
@@ -48,6 +21,33 @@
       "resource_type" : "sqs_trigger",
       "target_queue" : "async_queue",
       "batch_size" : 10
+    } ],
+    "env_variables" : { },
+    "publish_version" : false,
+    "logs_expiration" : "${logs_expiration}",
+    "snap_start" : "None"
+  },
+  "sns_handler" : {
+    "name" : "sns_handler",
+    "lambda_path" : "C:\\Users\\user\\Documents\\Epam\\demo\\task04",
+    "version" : "1.0.0",
+    "func_name" : "com.task04.SnsHandler",
+    "deployment_package" : "task04-1.0.0.jar",
+    "resource_type" : "lambda",
+    "runtime" : "java11",
+    "architectures" : [ "x86_64" ],
+    "iam_role_name" : "sns_handler-role",
+    "memory" : 1024,
+    "timeout" : 300,
+    "subnet_ids" : [ ],
+    "security_group_ids" : [ ],
+    "dependencies" : [ {
+      "resource_name" : "lambda_topic",
+      "resource_type" : "sns_topic"
+    } ],
+    "event_sources" : [ {
+      "resource_type" : "sns_topic_trigger",
+      "target_topic" : "lambda_topic"
     } ],
     "env_variables" : { },
     "publish_version" : false,
