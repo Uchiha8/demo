@@ -10,6 +10,7 @@ import com.syndicate.deployment.model.RetentionSetting;
 import java.util.HashMap;
 import java.util.Map;
 
+
 @LambdaHandler(lambdaName = "sns_handler",
 	roleName = "sns_handler-role",
 	logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
