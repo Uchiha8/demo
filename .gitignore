@@ -23,10 +23,10 @@
 hs_err_pid*
 replay_pid*
 
-.syndicate
-.syndicate-config-dev
+#.syndicate
+#.syndicate-config-dev
 .idea
 #target/
 #**/target/
 #/target/
-logs/
+#logs/

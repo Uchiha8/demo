@@ -1,0 +1,23 @@
+{
+  "api_handler" : {
+    "name" : "api_handler",
+    "lambda_path" : "C:\\Users\\user\\Documents\\Epam\\demo\\task05",
+    "version" : "1.0.0",
+    "func_name" : "com.task05.ApiHandler",
+    "deployment_package" : "task05-1.0.0.jar",
+    "resource_type" : "lambda",
+    "runtime" : "java11",
+    "architectures" : [ "x86_64" ],
+    "iam_role_name" : "api_handler-role",
+    "memory" : 1024,
+    "timeout" : 300,
+    "subnet_ids" : [ ],
+    "security_group_ids" : [ ],
+    "dependencies" : [ ],
+    "event_sources" : [ ],
+    "env_variables" : { },
+    "publish_version" : false,
+    "logs_expiration" : "${logs_expiration}",
+    "snap_start" : "None"
+  }
+}
