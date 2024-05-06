@@ -23,10 +23,9 @@ import java.util.UUID;
 		logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
 )
 @DynamoDbTriggerEventSource(targetTable = "Configuration", batchSize = 10)
-@DynamoDbEvents
 public class AuditProducer implements RequestHandler<Object, Map<String, Object>> {
 
-	private static final String AUDIT_TABLE_NAME = "cmtr-3477d8b3-Audit-test";
+	private static final String AUDIT_TABLE_NAME = "cmtr-580435c6-Audit-test";
 	private final AmazonDynamoDB client = AmazonDynamoDBClientBuilder.defaultClient();
 	private final DynamoDB dynamoDB = new DynamoDB(client);
 
