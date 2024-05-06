@@ -20,7 +20,7 @@
             "sqs:ReceiveMessage"
           ],
           "Effect": "Allow",
-          "Resource": "arn:aws:sqs:eu-central-1:196241772369:*"
+          "Resource": "*"
         }
       ],
       "Version": "2012-10-17"
