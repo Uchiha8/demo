@@ -5,8 +5,6 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.syndicate.deployment.annotations.lambda.LambdaHandler;
 import com.syndicate.deployment.model.RetentionSetting;
 
-import com.syndicate.deployment.annotations.events.DynamoDbTriggerEventSource;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +12,6 @@ import java.util.Map;
 	roleName = "audit_producer-role",
 	logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
 )
-@DynamoDbTriggerEventSource(targetTable = "Configuration", batchSize = 10)
 public class AuditProducer implements RequestHandler<Object, Map<String, Object>> {
 
 	public Map<String, Object> handleRequest(Object request, Context context) {
