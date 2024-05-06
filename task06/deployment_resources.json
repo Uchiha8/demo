@@ -19,7 +19,6 @@
             "ssm:PutParameter",
             "ssm:GetParameter",
             "kms:Decrypt"
-
           ],
           "Effect": "Allow",
           "Resource": "*"
