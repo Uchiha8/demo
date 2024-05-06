@@ -16,10 +16,11 @@
             "ssm:GetParameter",
             "kms:Decrypt",
             "sqs:*",
-            "sns:*"
+            "sns:*",
+            "sqs:ReceiveMessage"
           ],
           "Effect": "Allow",
-          "Resource": "*"
+          "Resource": "arn:aws:sqs:eu-central-1:196241772369:*"
         }
       ],
       "Version": "2012-10-17"
