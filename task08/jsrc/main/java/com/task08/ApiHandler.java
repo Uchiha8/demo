@@ -20,8 +20,7 @@ import java.util.Map;
 		layers = {"weatherClient"}
 )
 @LambdaLayer(
-		layerName = "weatherClient",
-		libraries = {"lib/OpenMeteoClient.jar", "lib/commons-lang3-3.14.0.jar"}
+		layerName = "weatherClient"
 )
 @LambdaUrlConfig
 public class ApiHandler implements RequestHandler<Object, Map<String, Object>> {
