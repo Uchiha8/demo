@@ -1,3 +1,4 @@
 .syndicate
 logs/
 .syndicate-config-*/
+.idea

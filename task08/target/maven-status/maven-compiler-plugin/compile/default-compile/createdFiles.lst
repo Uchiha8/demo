@@ -1,2 +1,2 @@
 com\task08\ApiHandler.class
-com\task08\layer\OpenMeteoClient.class
+com\task08\OpenMeteoClient.class
