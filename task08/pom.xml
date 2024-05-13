@@ -31,6 +31,22 @@
             <artifactId>deployment-configuration-annotations</artifactId>
             <version>${syndicate.java.plugin.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.task08.layer</groupId>
+            <artifactId>openmeteo-client</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/OpenMeteoClient.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.14.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/commons-lang3-3.14.0.jar</systemPath>
+        </dependency>
+
     </dependencies>
 
     <build>
