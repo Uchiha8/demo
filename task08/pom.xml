@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:slm="https://jakarta.ee/xml/ns/jakartaee"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
 
     <groupId>task08-group</groupId>
     <artifactId>task08</artifactId>
@@ -29,8 +31,9 @@
         <dependency>
             <groupId>net.sf.aws-syndicate</groupId>
             <artifactId>deployment-configuration-annotations</artifactId>
-            <version>${syndicate.java.plugin.version}</version>
+            <version>1.11.0</version>
         </dependency>
+
         <dependency>
             <groupId>com.task08.layer</groupId>
             <artifactId>openmeteo-client</artifactId>
@@ -55,7 +58,7 @@
             <resource>
                 <directory>${resources.dir}</directory>
             </resource>
-        </resources>        
+        </resources>
         <plugins>
             <plugin>
                 <groupId>net.sf.aws-syndicate</groupId>

@@ -9,8 +9,7 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 
 public class OpenMeteoClient {
-
-    public HttpResponse<String> getCurrentWeather() throws URISyntaxException, IOException, InterruptedException {
+    public static HttpResponse<String> getCurrentWeather() throws URISyntaxException, IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(new URI("https://api.open-meteo.com/v1/forecast?latitude=41.2647&longitude=69.2163&hourly=temperature_2m"))
                 .GET()
