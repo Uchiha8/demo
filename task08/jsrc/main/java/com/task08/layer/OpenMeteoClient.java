@@ -1,6 +1,4 @@
-package com.task08;
-
-import com.syndicate.deployment.annotations.lambda.LambdaLayer;
+package com.task08.layer;
 
 import java.io.IOException;
 import java.net.URI;
@@ -20,8 +18,6 @@ public class OpenMeteoClient {
 
         HttpClient client = HttpClient.newHttpClient();
 
-        HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-
-        return response;
+        return client.send(request, BodyHandlers.ofString());
     }
 }
