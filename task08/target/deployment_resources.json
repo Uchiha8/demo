@@ -1,0 +1,35 @@
+{
+  "api_handler" : {
+    "name" : "api_handler",
+    "lambda_path" : "C:\\Users\\asldev\\lambda-final\\lambda\\task08",
+    "version" : "1.0.0",
+    "func_name" : "com.task08.ApiHandler",
+    "deployment_package" : "task08-1.0.0.jar",
+    "resource_type" : "lambda",
+    "runtime" : "java11",
+    "architectures" : [ "x86_64" ],
+    "iam_role_name" : "api_handler-role",
+    "memory" : 1024,
+    "timeout" : 300,
+    "subnet_ids" : [ ],
+    "security_group_ids" : [ ],
+    "dependencies" : [ ],
+    "event_sources" : [ ],
+    "env_variables" : { },
+    "publish_version" : false,
+    "layers" : [ "weatherClient" ],
+    "logs_expiration" : "${logs_expiration}",
+    "snap_start" : "None",
+    "url_config" : {
+      "auth_type" : "NONE",
+      "invoke_mode" : "BUFFERED"
+    }
+  },
+  "weatherClient" : {
+    "name" : "weatherClient",
+    "runtimes" : [ "java11" ],
+    "resource_type" : "lambda_layer",
+    "deployment_package" : "weatherClient-assembly.zip",
+    "libraries" : [ "lib/OpenMeteoClient.jar" ]
+  }
+}
