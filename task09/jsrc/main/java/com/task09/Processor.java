@@ -47,6 +47,7 @@ public class Processor implements RequestHandler<Object, Map<String, Object>> {
         resultMap.put("body", body);
         return resultMap;
 
+
     }
 
     private void addWeatherToDynamoDB(String body) {
