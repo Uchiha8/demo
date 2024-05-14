@@ -26,7 +26,7 @@ import java.util.UUID;
 public class Processor implements RequestHandler<Object, Map<String, Object>> {
 
     private final OpenMeteoClient weatherClient = new OpenMeteoClient();
-    private static final String TABLE_NAME = "cmtr-3477d8b3-Weather-test";
+    private static final String TABLE_NAME = "cmtr-580435c6-Weather-test";
     private final AmazonDynamoDB client = AmazonDynamoDBClientBuilder.defaultClient();
     private final DynamoDB dynamoDb = new DynamoDB(client);
     public Map<String, Object> handleRequest(Object request, Context context) {
@@ -60,7 +60,6 @@ public class Processor implements RequestHandler<Object, Map<String, Object>> {
         }catch (Exception e) {
             System.out.println("couldn't insert item into Weather table.");
             e.printStackTrace();
-
         }
     }
 
