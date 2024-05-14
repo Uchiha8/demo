@@ -8,7 +8,6 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class OpenMeteoClient {
-
     public HttpResponse<String> getCurrentWeather() {
         HttpRequest request;
         HttpResponse<String> response;
