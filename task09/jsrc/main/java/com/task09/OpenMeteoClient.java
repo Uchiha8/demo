@@ -8,19 +8,31 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class OpenMeteoClient {
+
+    private final String CURRENT_WEATHER_URI = "https://api.open-meteo.com/v1/forecast?latitude=41.2647&longitude=69.2163&hourly=temperature_2m";
+
     public HttpResponse<String> getCurrentWeather() {
-        HttpRequest request;
+
+        HttpRequest request = null;
         HttpResponse<String> response;
         try {
-            String CURRENT_WEATHER_URI = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m";
             request = HttpRequest.newBuilder()
                     .uri(new URI(CURRENT_WEATHER_URI))
                     .GET()
                     .build();
-            response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
-        } catch (URISyntaxException | IOException | InterruptedException e) {
+
+            response = HttpClient.newHttpClient()
+                    .send(request, HttpResponse.BodyHandlers.ofString());
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
         return response;
+
     }
+
 }

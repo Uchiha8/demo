@@ -31,6 +31,7 @@
             <artifactId>deployment-configuration-annotations</artifactId>
             <version>${syndicate.java.plugin.version}</version>
         </dependency>
+
         <!-- Dynamodb -->
         <dependency>
             <groupId>com.amazonaws</groupId>
@@ -97,4 +98,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

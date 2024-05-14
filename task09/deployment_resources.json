@@ -31,7 +31,8 @@
     "custom_policies": [
       "lambda-basic-execution"
     ],
-    "resource_type": "iam_role"
+    "resource_type": "iam_role",
+    "tracing_mode": "Active"
   },
   "Weather": {
     "resource_type": "dynamodb_table",
