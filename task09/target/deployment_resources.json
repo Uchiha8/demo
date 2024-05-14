@@ -1,0 +1,28 @@
+{
+  "processor" : {
+    "name" : "processor",
+    "lambda_path" : "C:\\Users\\Najimof\\Documents\\Epam\\AWS Serverless\\demo\\task09",
+    "version" : "1.0.0",
+    "func_name" : "com.task09.Processor",
+    "deployment_package" : "task09-1.0.0.jar",
+    "resource_type" : "lambda",
+    "runtime" : "java11",
+    "architectures" : [ "x86_64" ],
+    "iam_role_name" : "processor-role",
+    "memory" : 1024,
+    "timeout" : 300,
+    "subnet_ids" : [ ],
+    "security_group_ids" : [ ],
+    "dependencies" : [ ],
+    "event_sources" : [ ],
+    "env_variables" : { },
+    "tracing_mode" : "Active",
+    "publish_version" : false,
+    "logs_expiration" : "${logs_expiration}",
+    "snap_start" : "None",
+    "url_config" : {
+      "auth_type" : "NONE",
+      "invoke_mode" : "BUFFERED"
+    }
+  }
+}
