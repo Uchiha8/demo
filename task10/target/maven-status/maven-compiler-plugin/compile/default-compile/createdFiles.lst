@@ -1,0 +1,13 @@
+com\task10\HttpMethod.class
+com\task10\ApiHandler.class
+com\task10\ReservationListResponse.class
+com\task10\Reservation.class
+com\task10\DynamoDBHandlerUtils.class
+com\task10\DynamoDBHandler.class
+com\task10\SignInHandler.class
+com\task10\ResourcePath.class
+com\task10\SignUpHandler.class
+com\task10\TableListResponse.class
+com\task10\TableCreatedResponse.class
+com\task10\CustomTableResponse.class
+com\task10\UserPoolHandler.class
