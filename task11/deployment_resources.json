@@ -86,7 +86,7 @@
     ],
     "custom_attributes": [],
     "client": {
-      "client_name": "cmtr-3477d8b3-task10-client",
+      "client_name": "cmtr-580435c6-task10-client",
       "generate_secret": false,
       "explicit_auth_flows": [
         "ALLOW_REFRESH_TOKEN_AUTH",
