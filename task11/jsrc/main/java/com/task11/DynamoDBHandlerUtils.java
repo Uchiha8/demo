@@ -3,8 +3,8 @@ package com.task11;
 import java.time.format.DateTimeFormatter;
 
 public class DynamoDBHandlerUtils {
-    public static final String TABLES_TABLE_NAME = "cmtr-3477d8b3-Tables-test";
-    public static final String RESERVATIONS_TABLE_NAME = "cmtr-3477d8b3-Reservations-test";
+    public static final String TABLES_TABLE_NAME = "cmtr-580435c6-Tables-test";
+    public static final String RESERVATIONS_TABLE_NAME = "cmtr-580435c6-Reservations-test";
     public static final String RESERVATION_TABLE_ID_KEY = "id";
     public static final String RESERVATION_TABLE_TABLE_NUMBER_KEY = "tableNumber";
     public static final String RESERVATION_TABLE_DATE_KEY = "date";
