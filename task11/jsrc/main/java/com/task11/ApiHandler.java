@@ -19,8 +19,8 @@ import java.util.Optional;
 )
 public class ApiHandler implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
 
-	static final String COGNITO_POOL_NAME = "cmtr-3477d8b3-simple-booking-userpool-test";
-	static final String COGNITO_CLIENT_NAME = "cmtr-3477d8b3-task11-client";
+	static final String COGNITO_POOL_NAME = "cmtr-580435c6-simple-booking-userpool-test";
+	static final String COGNITO_CLIENT_NAME = "cmtr-580435c6-task11-client";
 	DynamoDBHandler dynamoDBHandler = DynamoDBHandler.getInstance();
 
 	public APIGatewayProxyResponseEvent handleRequest(APIGatewayProxyRequestEvent event, Context context) {
